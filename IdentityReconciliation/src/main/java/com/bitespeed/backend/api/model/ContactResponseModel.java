@@ -1,12 +1,13 @@
 package com.bitespeed.backend.api.model;
 
+import java.util.List;
 
 public class ContactResponseModel {
 
 	private int primaryContactId;
-	private String[] emails;
-	private String[] phoneNumbers;
-	private int[] secondaryContactIds;
+	private List<String> emails;
+	private List<String> phoneNumbers;
+	private List<Integer> secondaryContactIds;
 	
 	public int getPrimaryContactId() {
 		return primaryContactId;
@@ -14,23 +15,23 @@ public class ContactResponseModel {
 	public void setPrimaryContactId(int primaryContactId) {
 		this.primaryContactId = primaryContactId;
 	}
-	public String[] getEmails() {
+	public List<String> getEmails() {
 		return emails;
 	}
-	public void setEmails(String[] emails) {
+	public void setEmails(List<String> emails) {
 		this.emails = emails;
 	}
-	public String[] getPhoneNumbers() {
+	public List<String> getPhoneNumbers() {
 		return phoneNumbers;
 	}
-	public void setPhoneNumbers(String[] phoneNumbers) {
+	public void setPhoneNumbers(List<String> phoneNumbers) {
 		this.phoneNumbers = phoneNumbers;
 	}
-	public int[] getSecondaryContactIds() {
+	public List<Integer> getSecondaryContactIds() {
 		return secondaryContactIds;
 	}
-	public void setSecondaryContactIds(int[] secondaryContactIds) {
+	public void setSecondaryContactIds(List<Integer> secondaryContactIds) {
 		this.secondaryContactIds = secondaryContactIds;
 	}
-
+	
 }

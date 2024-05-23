@@ -36,6 +36,13 @@ public class ContactEntity {
 	@Column(nullable = false)
 	private LocalDateTime createdAt;
 	
+	@Override
+	public String toString() {
+		return "ContactEntity [id=" + id + ", phoneNumber=" + phoneNumber + ", email=" + email + ", linkedId="
+				+ linkedId + ", linkPrecedence=" + linkPrecedence + ", createdAt=" + createdAt + ", updatedAt="
+				+ updatedAt + ", deletedAt=" + deletedAt + "]";
+	}
+
 	private LocalDateTime updatedAt;
 	
 	private LocalDateTime deletedAt;
